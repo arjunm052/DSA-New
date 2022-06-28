@@ -64,4 +64,20 @@ class minStack {
             minEle = x;
         }
     }
+    
+    //Function that return the element on top of stack
+    int top() {
+        //If stack is empty return -1
+		if(stack.isEmpty()){
+            return -1;
+        }
+        
+        //If element on top of stack is less than minEle, return minEle
+        if(stack.peek() < minEle){
+            return minEle;
+        }
+        
+        //else return the element on top of stack
+        return stack.peek();
+	}
 }
