@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class stack {
+public class customStack {
     Queue<Integer> q;
 
-    public stack() {
+    public customStack() {
         q = new LinkedList<Integer>();
     }
 
